@@ -1,0 +1,44 @@
+<meta charset="utf-8">
+<script>
+
+    function pulaLinha() {
+        document.write('<br><br>')
+
+    }
+    function mostra(frase){
+        document.write(frase)
+        pulaLinha()
+    }
+    function pergunte(frase){
+       var xx = parseInt(prompt(frase))
+       return xx
+    }
+    function maioridade(nome, idade ) {
+        if(idade >= 18){
+            mostra(nome + ' é maior de idade')
+        }
+        else{
+            mostra(nome + ' é menor de idade')
+        }
+
+    }
+
+            var nome1 = prompt('Qual o primeiro nome?')
+            var nome2 = prompt('Qual o segundo nome?')
+            var nome3 = prompt('Qual o terceiro nome?')
+            var nome4 = prompt('Qual o quarto nome?')
+            var nome5 = prompt('Qual o quinto nome?')
+
+            var joao = pergunte('qual a idade de ' + nome1)
+            var pedro =pergunte ('qual a idade de ' + nome2) 
+            var neno = pergunte('qual a idade de '+ nome3)
+            var matheus = pergunte('qual a idade de '+ nome4)
+            var gil = pergunte('qual a idade de '+ nome5)
+
+    maioridade( nome1, joao )
+    maioridade( nome2, pedro)
+    maioridade( nome3, neno)
+    maioridade( nome4, matheus)
+    maioridade(nome5, gil)
+
+</script>

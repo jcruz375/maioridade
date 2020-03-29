@@ -1,0 +1,46 @@
+<meta charset="utf-8">
+<script>
+
+function pulaLinha() {
+    document.write('<br><br>')
+
+}
+function mostra(frase){
+    document.write(frase)
+    pulaLinha()
+}
+function pergunte(frase){
+    var xx = parseInt(prompt(frase))
+    return xx
+}
+function maioridade(nome, idade ) {
+    if(idade >= 18){
+        mostra(nome + ' é maior de idade')
+    }
+    else{
+        mostra(nome + ' é menor de idade')
+    }
+
+}
+
+var nomes = [];
+var nomesQuant = prompt('quantos nomes');
+
+for(let i = 1; i <= nomesQuant; i++ ){
+    var nome = prompt('Qual o nome ' + i)
+    nomes.push(nome)
+}
+
+function maioridade(){
+    for(let i = 0; i < nomes.length; i++){
+    var idade = parseInt(prompt('Qual a idade de ' + nomes[i]))
+    if(idade >= 18){
+        document.write(nomes[i] + ' é maior de idade.' + '<br>')
+    }
+    else{document.write(nomes[i] + ' é menor de idade.' + '<br>')}
+}
+}
+maioridade()
+
+
+</script>
